@@ -1,6 +1,23 @@
 using System;
 using System.Collections.Generic;
 
+namespace main {
+
+    class Testing {
+
+        static void Main(string[] args) {
+
+            Range a = new Range(1, 10);
+            Range b = new Range(4, 15);
+
+            a.Show();
+            b.Show();
+
+            return;
+        }
+    }
+}
+
 class Range {
 
     private int start;
@@ -61,7 +78,7 @@ class Range {
 
     public int Combine(Range n) {
         
-        if (!Overlaps(n) && !Touching(Range n))
+        if (!Overlaps(n) && !Touching(n))
             return -1;
 
         start = (start < n.start) ? start: n.start;
@@ -77,6 +94,14 @@ class Range {
             elements.Add(each);
 
         return elements;
+    }
+
+    public void Show() {
+
+        for (var num = start; num < end; num++)
+            Console.WriteLine(num);
+
+        return;
     }
 }
 
