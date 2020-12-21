@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj": {}
+    "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj": {
+    "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj",
+        "projectUniqueName": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj",
         "projectName": "Range",
-        "projectPath": "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj",
+        "projectPath": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj",
         "packagesPath": "C:\\Users\\Rushi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rushi\\Desktop\\Range\\obj\\",
+        "outputPath": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rushi\\AppData\\Roaming\\NuGet\\NuGet.Config",

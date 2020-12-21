@@ -5643,11 +5643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rushi\\Desktop\\Range.Test\\Range.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range.Test\\Range.Test.csproj",
       "projectName": "Range.Test",
-      "projectPath": "C:\\Users\\Rushi\\Desktop\\Range.Test\\Range.Test.csproj",
+      "projectPath": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range.Test\\Range.Test.csproj",
       "packagesPath": "C:\\Users\\Rushi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rushi\\Desktop\\Range.Test\\obj\\",
+      "outputPath": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5664,8 +5664,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj": {
-              "projectPath": "C:\\Users\\Rushi\\Desktop\\Range\\Range.csproj"
+            "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj": {
+              "projectPath": "C:\\Users\\Rushi\\Desktop\\unit-testing\\C#\\Range\\Range.csproj"
             }
           }
         }

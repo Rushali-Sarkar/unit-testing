@@ -75,6 +75,14 @@ namespace Range
             end = (end > n.end) ? end : n.end;
             return 0;
         }
+        public List<int> Elements()
+        {
+            var ElementsInRange = new List<int>();
+            for (var number = start; number < end; number++)
+                ElementsInRange.Add(number);
+
+            return ElementsInRange;
+        }
 
     }
 }

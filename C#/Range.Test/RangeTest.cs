@@ -26,7 +26,7 @@ namespace Range.Test
             Assert.False(DoesContain6);
 
             return;
-            
+
         }
 
         [Fact]
@@ -186,7 +186,7 @@ namespace Range.Test
             Assert.False(IsSubset5);
             Assert.False(IsSubset6);
 
-            return; 
+            return;
 
         }
 
@@ -257,17 +257,29 @@ namespace Range.Test
             var range5 = new Range(50, 40);
             var range6 = new Range(45, 35);
 
-            var canCombine1 = range1.Combine(range2) == 0;
-            var canCombine2 = range2.Combine(range3) == 0;
-            var canCombine3 = range3.Combine(range5) == -1;
-            var canCombine4 = range4.Combine(range6) == -1;
+            var canCombine1 = range1.Combine(range2);
+            var canCombine2 = range2.Combine(range3);
+            var canCombine3 = range3.Combine(range5);
+            var canCombine4 = range4.Combine(range6);
 
-            Assert.True(canCombine1);
-            Assert.True(canCombine2);
-            Assert.True(canCombine3);
-            Assert.True(canCombine4);
-           
+            Assert.Equal(0, canCombine1);
+            Assert.Equal(0, canCombine2);
+            Assert.Equal(-1, canCombine3);
+            Assert.Equal(-1, canCombine4);
+
             return;
+        }
+
+        [Theory]
+        [InlineData(20, 30)]
+        public void TestElements(int start, int end)
+        {
+            var ElementsInRange = new List<int>();
+            for (var number = start; number < end; number++)
+                ElementsInRange.Add(number);
+
+            var range = new Range(end, start);
+            Assert.Equal(ElementsInRange, range.Elements());
         }
 
     }

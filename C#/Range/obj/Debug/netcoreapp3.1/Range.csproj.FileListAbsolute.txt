@@ -11,3 +11,16 @@ C:\Users\Rushi\Desktop\Range\bin\Debug\netcoreapp3.1\Range.pdb
 C:\Users\Rushi\Desktop\Range\obj\Debug\netcoreapp3.1\Range.dll
 C:\Users\Rushi\Desktop\Range\obj\Debug\netcoreapp3.1\Range.pdb
 C:\Users\Rushi\Desktop\Range\obj\Debug\netcoreapp3.1\Range.genruntimeconfig.cache
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.exe
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.deps.json
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.runtimeconfig.json
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.runtimeconfig.dev.json
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.dll
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\bin\Debug\netcoreapp3.1\Range.pdb
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.csprojAssemblyReference.cache
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.AssemblyInfoInputs.cache
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.AssemblyInfo.cs
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.csproj.CoreCompileInputs.cache
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.dll
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.pdb
+C:\Users\Rushi\Desktop\unit-testing\C#\Range\obj\Debug\netcoreapp3.1\Range.genruntimeconfig.cache
