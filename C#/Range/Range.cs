@@ -9,12 +9,20 @@ namespace Range
         private int start;
         private int end;
 
-        public Range(int limit, int begin = 1)
+        public Range(int limit)
         {
 
+            start = 0;
+            end = limit;
+        }
+
+        public Range(int begin, int limit)
+        {
             start = begin;
             end = limit;
         }
+
+
 
         public bool Contains(int item)
         {

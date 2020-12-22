@@ -10,7 +10,7 @@ namespace Range.Test
         [Fact]
         public void TestContains()
         {
-            var range1 = new Range(11, 1);
+            var range1 = new Range(1, 11);
             var DoesContain1 = range1.Contains(2);
             var DoesContain2 = range1.Contains(3);
             var DoesContain3 = range1.Contains(5);
@@ -32,10 +32,10 @@ namespace Range.Test
         [Fact]
         public void TestOverlaps()
         {
-            var range1 = new Range(15, 5);
-            var range2 = new Range(25, 10);
-            var range3 = new Range(25, 15);
-            var range4 = new Range(30, 20);
+            var range1 = new Range(5, 15);
+            var range2 = new Range(10, 25);
+            var range3 = new Range(15, 25);
+            var range4 = new Range(20, 30);
 
             var DoesOverlap1 = range1.Overlaps(range2);
             var DoesOverlap2 = range2.Overlaps(range3);
@@ -57,12 +57,12 @@ namespace Range.Test
         [Fact]
         public void TestLessThan()
         {
-            var range1 = new Range(10, 1);
-            var range2 = new Range(20, 10);
-            var range3 = new Range(30, 20);
-            var range4 = new Range(40, 30);
-            var range5 = new Range(50, 40);
-            var range6 = new Range(60, 50);
+            var range1 = new Range(1, 10);
+            var range2 = new Range(10, 20);
+            var range3 = new Range(20, 30);
+            var range4 = new Range(30, 40);
+            var range5 = new Range(40, 50);
+            var range6 = new Range(50, 60);
 
             var IsLessThan1 = range1.LessThan(range2);
             var IsLessThan2 = range2.LessThan(range3);
@@ -84,12 +84,12 @@ namespace Range.Test
         [Fact]
         public void TestGreaterThan()
         {
-            var range1 = new Range(15, 5);
-            var range2 = new Range(25, 15);
-            var range3 = new Range(35, 25);
-            var range4 = new Range(45, 35);
-            var range5 = new Range(55, 45);
-            var range6 = new Range(65, 55);
+            var range1 = new Range(5, 15);
+            var range2 = new Range(15, 25);
+            var range3 = new Range(25, 35);
+            var range4 = new Range(35, 45);
+            var range5 = new Range(45, 55);
+            var range6 = new Range(55, 65);
 
             var IsGreaterThan1 = range6.GreaterThan(range5);
             var IsGreaterThan2 = range5.GreaterThan(range4);
@@ -111,12 +111,12 @@ namespace Range.Test
         [Fact]
         public void TestEquals()
         {
-            var range1 = new Range(10, 1);
-            var range2 = new Range(10, 1);
-            var range3 = new Range(30, 20);
-            var range4 = new Range(30, 20);
-            var range5 = new Range(60, 50);
-            var range6 = new Range(60, 50);
+            var range1 = new Range(1, 10);
+            var range2 = new Range(1, 10);
+            var range3 = new Range(20, 30);
+            var range4 = new Range(20, 30);
+            var range5 = new Range(50, 60);
+            var range6 = new Range(50, 60);
 
             var IsEqual1 = range1.Equals(range2);
             var IsEqual2 = range3.Equals(range4);
@@ -138,12 +138,12 @@ namespace Range.Test
         [Fact]
         public void TestIsDisjoint()
         {
-            var range1 = new Range(15, 5);
-            var range2 = new Range(20, 10);
-            var range3 = new Range(25, 15);
-            var range4 = new Range(30, 20);
-            var range5 = new Range(35, 25);
-            var range6 = new Range(40, 30);
+            var range1 = new Range(5, 15);
+            var range2 = new Range(10, 20);
+            var range3 = new Range(15, 25);
+            var range4 = new Range(20, 30);
+            var range5 = new Range(25, 35);
+            var range6 = new Range(30, 40);
 
             var IsDisjoint1 = range1.IsDisjoint(range3);
             var IsDisjoint2 = range2.IsDisjoint(range4);
@@ -165,12 +165,12 @@ namespace Range.Test
         [Fact]
         public void TestIsSubset()
         {
-            var range1 = new Range(20, 1);
-            var range2 = new Range(15, 5);
-            var range3 = new Range(50, 30);
-            var range4 = new Range(45, 35);
-            var range5 = new Range(80, 60);
-            var range6 = new Range(75, 65);
+            var range1 = new Range(1, 20);
+            var range2 = new Range(5, 15);
+            var range3 = new Range(30, 50);
+            var range4 = new Range(35, 45);
+            var range5 = new Range(60, 80);
+            var range6 = new Range(65, 75);
 
             var IsSubset1 = range2.IsSubset(range1);
             var IsSubset2 = range4.IsSubset(range3);
@@ -193,12 +193,12 @@ namespace Range.Test
         [Fact]
         public void TestIsSuperSet()
         {
-            var range1 = new Range(20, 1);
-            var range2 = new Range(15, 5);
-            var range3 = new Range(50, 30);
-            var range4 = new Range(45, 35);
-            var range5 = new Range(80, 60);
-            var range6 = new Range(75, 65);
+            var range1 = new Range(1, 20);
+            var range2 = new Range(5, 15);
+            var range3 = new Range(30, 50);
+            var range4 = new Range(35, 45);
+            var range5 = new Range(60, 80);
+            var range6 = new Range(65, 75);
 
             var IsSuperSet1 = range1.IsSuperset(range2);
             var IsSuperSet2 = range3.IsSuperset(range4);
@@ -222,12 +222,12 @@ namespace Range.Test
         [Fact]
         public void TestToucing()
         {
-            var range1 = new Range(10, 1);
-            var range2 = new Range(20, 10);
-            var range3 = new Range(30, 20);
-            var range4 = new Range(40, 30);
-            var range5 = new Range(50, 40);
-            var range6 = new Range(60, 50);
+            var range1 = new Range(1, 10);
+            var range2 = new Range(10, 20);
+            var range3 = new Range(20, 30);
+            var range4 = new Range(30, 40);
+            var range5 = new Range(40, 50);
+            var range6 = new Range(50, 60);
 
             var IsToucing1 = range1.Touching(range2);
             var IsToucing2 = range3.Touching(range4);
@@ -250,12 +250,12 @@ namespace Range.Test
         [Fact]
         public void TestCombine()
         {
-            var range1 = new Range(20, 1);
-            var range2 = new Range(15, 5);
-            var range3 = new Range(25, 15);
-            var range4 = new Range(30, 20);
-            var range5 = new Range(50, 40);
-            var range6 = new Range(45, 35);
+            var range1 = new Range(1, 20);
+            var range2 = new Range(5, 15);
+            var range3 = new Range(15, 25);
+            var range4 = new Range(20, 30);
+            var range5 = new Range(40, 50);
+            var range6 = new Range(35, 45);
 
             var canCombine1 = range1.Combine(range2);
             var canCombine2 = range2.Combine(range3);
@@ -278,9 +278,22 @@ namespace Range.Test
             for (var number = start; number < end; number++)
                 ElementsInRange.Add(number);
 
-            var range = new Range(end, start);
+            var range = new Range(start, end);
             Assert.Equal(ElementsInRange, range.Elements());
+
+
+            var ElementsInRange1 = new List<int>() {0, 1, 2, 3, 4, 5};
+            var ElementsInRange2 = new List<int>() { 20, 21, 22, 23, 24, 25, 26 };
+
+            var range1 = new Range(6);
+            var range2 = new Range(20, 27);
+
+            Assert.Equal(ElementsInRange1, range1.Elements());
+            Assert.Equal(ElementsInRange2, range2.Elements());
+
+            return;
         }
+
 
     }
 }
