@@ -31,7 +31,8 @@ namespace Range
 
         public bool Overlaps(Range n)
         {
-            return ((n.start >= start) && (n.start < end)) || ((n.end > start) && (n.end <= end));
+            return ((n.start >= start) && (n.start < end)) || 
+                    ((n.end > start) && (n.end <= end));
         }
 
         public bool LessThan(Range n)
@@ -76,7 +77,7 @@ namespace Range
         public int Combine(Range n)
         {
 
-            if (!Overlaps(n) && !Touching(n) && !IsSubset(n) && !IsSuperset(n))
+            if (IsDisjoint(n) && !Touching(n))
                 return -1;
 
             start = (start < n.start) ? start : n.start;
